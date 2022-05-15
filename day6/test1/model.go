@@ -6,3 +6,8 @@ type User struct {
 	Age     int    `json:"age"`
 	Version int    `json:"version"`
 }
+
+type People struct {
+	Name string `json:"name"`
+	Age  int    `json:"age"`
+}

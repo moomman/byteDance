@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"awesomeProject/day6/test1"
+	"bytedance/day6/test1"
 	"fmt"
 	"github.com/spf13/cobra"
 	"gorm.io/driver/mysql"
@@ -33,7 +33,7 @@ func moveStruct(DbName string) error {
 	if err != nil {
 		return err
 	}
-	err = db.AutoMigrate(&test1.User{})
+	err = db.AutoMigrate(&test1.People{})
 	if err != nil {
 		return err
 	}

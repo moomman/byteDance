@@ -39,7 +39,7 @@ func main() {
 	// 想对已有的model生成crud等基础方法可以直接指定model struct ，例如model.User{}
 	// 如果是想直接生成表的model和crud方法，则可以指定标名称，例如g.GenerateModel("company")
 	// 想自定义某个表生成特性，比如struct的名称/字段类型/tag等，可以指定opt，例如g.GenerateModel("company",gen.FieldIgnore("address")), g.GenerateModelAs("people", "Person", gen.FieldIgnore("address"))
-	g.ApplyBasic(g.GenerateModelAs("users", "User", nil))
+	g.ApplyBasic(g.GenerateModelAs("people", "People", nil))
 
 	// apply diy interfaces on structs or table models
 	// 如果想给某些表或者model生成自定义方法，可以用ApplyInterface，第一个参数是方法接口，可以参考DIY部分文档定义

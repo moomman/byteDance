@@ -1,7 +1,7 @@
 package main
 
 import (
-	"byteDance/day6/test1/cmd"
+	"bytedance/day6/test1/cmd"
 )
 
 func main() {
